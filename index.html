@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Satyabrata Nana — Trusted Odia Pujari in Bengaluru</title>
+<meta name="description" content="Pandit Satyabrata Nana — Experienced Odia Pujari in Bengaluru performing authentic Hindu rituals — Griha Pravesh, Weddings, Satyanarayan Puja & more. Book now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Odia:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ═══ SCROLL PROGRESS ═══ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav class="navbar" id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon">🙏</div>
+    <div class="nav-logo-text">Satyabrata<span>Nana</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about" data-i18n="nav_about">About</a></li>
+    <li><a href="#services" data-i18n="nav_services">Services</a></li>
+    <li><a href="#why" data-i18n="nav_why">Why Us</a></li>
+    <li><a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a></li>
+    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:12px">
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="hi">हि</button>
+      <button class="lang-btn" data-lang="od">ଓ</button>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══ MOBILE NAV ═══ -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileClose" aria-label="Close">&#10005;</button>
+  <a href="#about" data-i18n="nav_about">About</a>
+  <a href="#services" data-i18n="nav_services">Services</a>
+  <a href="#why" data-i18n="nav_why">Why Us</a>
+  <a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a>
+  <a href="#contact" data-i18n="nav_contact">Contact</a>
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="hi">हि</button>
+    <button class="lang-btn" data-lang="od">ଓ</button>
+  </div>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <canvas id="heroParticles"></canvas>
+  <div class="hero-glow" id="heroGlow"></div>
+  <div class="floating-symbols" id="floatingSymbols"></div>
+  <svg class="hero-mandala" viewBox="0 0 400 400"><circle cx="200" cy="200" r="190" fill="none" stroke="#D4A937" stroke-width="0.5"/><circle cx="200" cy="200" r="160" fill="none" stroke="#D4A937" stroke-width="0.5"/><circle cx="200" cy="200" r="130" fill="none" stroke="#D4A937" stroke-width="0.5"/><circle cx="200" cy="200" r="100" fill="none" stroke="#D4A937" stroke-width="0.3"/><circle cx="200" cy="200" r="70" fill="none" stroke="#D4A937" stroke-width="0.3"/><g stroke="#D4A937" stroke-width="0.3"><line x1="200" y1="10" x2="200" y2="390"/><line x1="10" y1="200" x2="390" y2="200"/><line x1="55" y1="55" x2="345" y2="345"/><line x1="345" y1="55" x2="55" y2="345"/></g><g fill="none" stroke="#D4A937" stroke-width="0.4"><path d="M200 40 L220 80 L200 60 L180 80Z"/><path d="M200 360 L220 320 L200 340 L180 320Z"/><path d="M40 200 L80 180 L60 200 L80 220Z"/><path d="M360 200 L320 180 L340 200 L320 220Z"/></g></svg>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+      <span data-i18n="hero_badge">Trusted by 500+ Families in Bengaluru</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span data-i18n="hero_title_1">Authentic</span> <span class="highlight" data-i18n="hero_title_2">Odia Pujari</span><br>
+      <span data-i18n="hero_title_3">in Bengaluru</span>
+    </h1>
+
+    <p class="hero-subtitle" data-i18n="hero_subtitle">
+      Performing all Hindu rituals with Vedic authenticity, deep devotion, and the rich traditions of Odisha. Your trusted pandit for every sacred occasion.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#contact" class="btn btn-primary" data-i18n="hero_cta_book">🙏 Book a Puja</a>
+      <a href="tel:+919513808267" class="btn btn-secondary" data-i18n="hero_cta_call">📞 Call Now</a>
+      <a href="https://wa.me/919513808267?text=Namaste%20Satyabrata%20Nana,%20I%20would%20like%20to%20book%20a%20puja." class="btn btn-whatsapp" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+
+    <div class="hero-trust">
+      <div class="hero-trust-item">
+        <div class="hero-trust-number" data-count="10" data-suffix="+">0</div>
+        <div class="hero-trust-label" data-i18n="hero_trust_years">Years Experience</div>
+      </div>
+      <div class="hero-trust-item">
+        <div class="hero-trust-number" data-count="500" data-suffix="+">0</div>
+        <div class="hero-trust-label" data-i18n="hero_trust_pujas">Pujas Performed</div>
+      </div>
+      <div class="hero-trust-item">
+        <div class="hero-trust-number" data-count="4.9" data-suffix="★" data-decimal="true">0</div>
+        <div class="hero-trust-label" data-i18n="hero_trust_rating">Family Rating</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-diyas">
+    <div class="diya"><div class="diya-flame"></div><div class="diya-base"></div></div>
+    <div class="diya"><div class="diya-flame" style="animation-delay:0.5s"></div><div class="diya-base"></div></div>
+    <div class="diya"><div class="diya-flame" style="animation-delay:1s"></div><div class="diya-base"></div></div>
+  </div>
+</section>
+
+<!-- ── Divider ── -->
+<div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-icon">🙏</div><div class="section-divider-line"></div></div>
+
+<!-- ═══ ABOUT ═══ -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-image reveal-left">
+      <div class="about-image-inner">🙏</div>
+      <div class="about-image-badge">
+        <strong>10+</strong>
+        <span data-i18n="about_badge">Years of Vedic Service</span>
+      </div>
+    </div>
+    <div class="about-content reveal-right">
+      <div class="section-label">☉ <span data-i18n="about_label">About Satyabrata Nana</span></div>
+      <h2 data-i18n="about_title">Bringing the Sacred Traditions of Odisha to Bengaluru</h2>
+      <p data-i18n="about_p1">With over a decade of experience in performing Vedic rituals, Satyabrata Nana is a deeply devoted and knowledgeable Odia Brahmin priest based in Bengaluru. Trained in the traditional gurukul system, he carries the rich spiritual heritage of Odisha to families across Karnataka's capital.</p>
+      <p data-i18n="about_p2">Whether it is a Griha Pravesh, a wedding ceremony, or an annual Shraddha, Satyabrata Nana ensures every ritual is performed with proper Vedic mantras, correct procedures, and heartfelt devotion. He is fluent in Odia, Hindi, English, and Kannada.</p>
+      <p style="font-style:italic;color:var(--saffron-deep);font-family:var(--font-display);font-size:1.05rem">"ଓଁ ସହ ନାଭବତୁ, ସହ ନୌ ଭୁନକ୍ତୁ"</p>
+      <div class="about-tags">
+        <span class="about-tag" data-i18n="about_tag1">🕉️ Vedic Scholar</span>
+        <span class="about-tag" data-i18n="about_tag2">📖 10+ Years</span>
+        <span class="about-tag" data-i18n="about_tag3">🗣️ 4 Languages</span>
+        <span class="about-tag" data-i18n="about_tag4">📍 All Bengaluru</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Divider ── -->
+<div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-icon">🕉️</div><div class="section-divider-line"></div></div>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="services" id="services">
+  <div class="section-header reveal">
+    <div class="section-label">🙏 <span data-i18n="services_label">Our Services</span></div>
+    <h2 class="section-title" data-i18n="services_title">Sacred Rituals for Every Occasion</h2>
+    <p class="section-desc" data-i18n="services_desc">From joyous celebrations to solemn ceremonies, we perform all Hindu rituals with authenticity, devotion, and the sacred traditions of Odisha.</p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card reveal stagger-1">
+      <div class="glow-border"></div>
+      <div class="service-icon">🏠</div>
+      <h3 data-i18n="svc1_title">Griha Pravesh</h3>
+      <p data-i18n="svc1_desc">Enter your new home with divine blessings. Complete Vastu-aligned housewarming ceremony with Ganesh Puja, Navagraha Homa, and traditional rituals.</p>
+      <a href="#contact" class="service-book"><span data-i18n="svc_book">Book Now</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="service-card reveal stagger-2">
+      <div class="glow-border"></div>
+      <div class="service-icon">🙏</div>
+      <h3 data-i18n="svc2_title">Satyanarayan Puja</h3>
+      <p data-i18n="svc2_desc">Invoke the blessings of Lord Vishnu for prosperity, peace, and fulfillment. Performed with traditional Odia Katha Vachan and Prasad preparation.</p>
+      <a href="#contact" class="service-book"><span data-i18n="svc_book">Book Now</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="service-card reveal stagger-3">
+      <div class="glow-border"></div>
+      <div class="service-icon">💍</div>
+      <h3 data-i18n="svc3_title">Wedding Rituals</h3>
+      <p data-i18n="svc3_desc">Complete Hindu wedding ceremonies — from engagement to Saptapadi. Authentic Odia or North Indian traditions, customized to your family's needs.</p>
+      <a href="#contact" class="service-book"><span data-i18n="svc_book">Book Now</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="service-card reveal stagger-4">
+      <div class="glow-border"></div>
+      <div class="service-icon">👶</div>
+      <h3 data-i18n="svc4_title">Naming Ceremony</h3>
+      <p data-i18n="svc4_desc">Bless your newborn with a beautiful Naamkaran Sanskar. Includes Nakshatra-based name suggestion, Havan, and traditional blessings.</p>
+      <a href="#contact" class="service-book"><span data-i18n="svc_book">Book Now</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="service-card reveal stagger-5">
+      <div class="glow-border"></div>
+      <div class="service-icon">🪔</div>
+      <h3 data-i18n="svc5_title">Shraddha / Pitru Puja</h3>
+      <p data-i18n="svc5_desc">Honor your ancestors with proper Shraddha rituals, Tarpan, and Pind Daan. Performed with compassion and strict adherence to Vedic traditions.</p>
+      <a href="#contact" class="service-book"><span data-i18n="svc_book">Book Now</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="service-card reveal stagger-6">
+      <div class="glow-border"></div>
+      <div class="service-icon">🏛️</div>
+      <h3 data-i18n="svc6_title">Vastu Puja</h3>
+      <p data-i18n="svc6_desc">Harmonize your home or office with Vastu Shanti Puja. Remove negative energies and invite prosperity with powerful Vedic Havan and Mantra Jaap.</p>
+      <a href="#contact" class="service-book"><span data-i18n="svc_book">Book Now</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="service-card reveal stagger-1">
+      <div class="glow-border"></div>
+      <div class="service-icon">🔥</div>
+      <h3 data-i18n="svc7_title">Homa / Havan</h3>
+      <p data-i18n="svc7_desc">Sacred fire rituals performed with Vedic precision for health, wealth, and spiritual well-being. Includes Ganapati Homa, Ayush Homa, Sudarshana Homa, and custom Havan as per your needs.</p>
+      <a href="#contact" class="service-book"><span data-i18n="svc_book">Book Now</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="service-card reveal stagger-2">
+      <div class="glow-border"></div>
+      <div class="service-icon">🪐</div>
+      <h3 data-i18n="svc8_title">Navagraha Puja</h3>
+      <p data-i18n="svc8_desc">Appease the nine celestial planets to remove doshas, reduce malefic effects, and bring balance to your life. Performed with proper Navagraha Mantra Jaap, Homa, and traditional offerings.</p>
+      <a href="#contact" class="service-book"><span data-i18n="svc_book">Book Now</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="service-card reveal stagger-3">
+      <div class="glow-border"></div>
+      <div class="service-icon">🌿</div>
+      <h3 data-i18n="svc9_title">Savitri Puja</h3>
+      <p data-i18n="svc9_desc">Sacred Savitri Vrat Puja dedicated to Goddess Savitri for marital bliss, longevity of spouse, and family harmony. Performed with traditional Vrat Katha, Banyan tree puja, and proper Vedic rituals.</p>
+      <a href="#contact" class="service-book"><span data-i18n="svc_book">Book Now</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Divider ── -->
+<div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-icon">✦</div><div class="section-divider-line"></div></div>
+
+<!-- ═══ WHY US ═══ -->
+<section class="why" id="why">
+  <div class="section-header reveal">
+    <div class="section-label">✦ <span data-i18n="why_label">Why Choose Us</span></div>
+    <h2 class="section-title" data-i18n="why_title">Devoted to Authenticity & Service</h2>
+    <p class="section-desc" data-i18n="why_desc">Families across Bengaluru trust Satyabrata Nana for his deep knowledge, approachable nature, and unwavering commitment to Vedic traditions.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-item reveal">
+      <div class="why-icon">🕉️</div>
+      <h3 data-i18n="why1_title">Authentic Odia Rituals</h3>
+      <p data-i18n="why1_desc">True to the spiritual traditions of Odisha, every mantra and ritual follows proper Vedic procedures passed down through generations.</p>
+    </div>
+    <div class="why-item reveal">
+      <div class="why-icon">📍</div>
+      <h3 data-i18n="why2_title">All Across Bengaluru</h3>
+      <p data-i18n="why2_desc">Available for pujas anywhere in Bengaluru — from Whitefield to Electronic City, Jayanagar to Yelahanka. We come to your doorstep.</p>
+    </div>
+    <div class="why-item reveal">
+      <div class="why-icon">💰</div>
+      <h3 data-i18n="why3_title">Affordable Dakshina</h3>
+      <p data-i18n="why3_desc">Transparent and fair pricing. No hidden charges. We believe divine blessings should be accessible to every family, regardless of budget.</p>
+    </div>
+    <div class="why-item reveal">
+      <div class="why-icon">🕐</div>
+      <h3 data-i18n="why4_title">Flexible Timings</h3>
+      <p data-i18n="why4_desc">Early morning, evening, or weekends — we adjust to your schedule and preferred muhurat. Advance and same-day bookings available.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Divider ── -->
+<div class="section-divider"><div class="section-divider-line"></div><div class="section-divider-icon">★</div><div class="section-divider-line"></div></div>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="testimonials" id="testimonials">
+  <div class="section-header reveal">
+    <div class="section-label">★ <span data-i18n="test_label">Testimonials</span></div>
+    <h2 class="section-title" data-i18n="test_title">Blessed Families Share Their Experience</h2>
+  </div>
+  <div class="testimonials-grid">
+
+    <div class="testimonial-card reveal-scale stagger-1">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text" data-i18n="test1_text">"Satyabrata Nana performed our Griha Pravesh with such devotion and clarity. He explained every step of the ritual in both Odia and Hindi, making it meaningful for our entire family. Highly recommended!"</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">SM</div>
+        <div>
+          <div class="testimonial-name">Subhasree Mohanty</div>
+          <div class="testimonial-location">Whitefield, Bengaluru</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal-scale stagger-2">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text" data-i18n="test2_text">"We were looking for an Odia pandit for our daughter's wedding and found Satyabrata Nana. The ceremony was beautifully conducted with proper mantras and traditions. Our guests were deeply impressed."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">RP</div>
+        <div>
+          <div class="testimonial-name">Rajesh Pattnaik</div>
+          <div class="testimonial-location">HSR Layout, Bengaluru</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal-scale stagger-3">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text" data-i18n="test3_text">"Satyabrata Nana has been performing our annual Satyanarayan Puja for 3 years now. He is always punctual, thorough, and brings a calm, spiritual energy. Our family truly trusts him."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">AD</div>
+        <div>
+          <div class="testimonial-name">Anjali Das</div>
+          <div class="testimonial-location">Marathahalli, Bengaluru</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="contact" id="contact">
+  <div class="section-header reveal">
+    <div class="section-label">📞 <span data-i18n="contact_label">Get in Touch</span></div>
+    <h2 class="section-title" data-i18n="contact_title">Book Your Puja Today</h2>
+    <p class="section-desc" data-i18n="contact_desc">Reach out via phone, WhatsApp, or the form below. We typically respond within 30 minutes.</p>
+  </div>
+  <div class="contact-wrapper">
+    <div class="contact-info reveal-left">
+      <h3 data-i18n="contact_info_title">Let's Connect</h3>
+      <p data-i18n="contact_info_desc">Whether you need guidance on muhurat selection or want to discuss your puja requirements, feel free to reach out anytime.</p>
+      <div class="contact-methods">
+        <a href="tel:+919513808267" class="contact-method">
+          <div class="contact-method-icon phone">📞</div>
+          <div>
+            <strong data-i18n="contact_phone_label">Call Directly</strong>
+            <span>+91 95138 08267</span>
+          </div>
+        </a>
+        <a href="https://wa.me/919513808267?text=Namaste%20Satyabrata%20Nana" class="contact-method" target="_blank" rel="noopener">
+          <div class="contact-method-icon wa">💬</div>
+          <div>
+            <strong data-i18n="contact_wa_label">WhatsApp Message</strong>
+            <span data-i18n="contact_wa_desc">Quick response guaranteed</span>
+          </div>
+        </a>
+        <div class="contact-method">
+          <div class="contact-method-icon loc">📍</div>
+          <div>
+            <strong data-i18n="contact_loc_label">Service Area</strong>
+            <span data-i18n="contact_loc_desc">All of Bengaluru & surrounding areas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-box reveal-right">
+      <h3 data-i18n="form_title">Request a Booking</h3>
+      <p data-i18n="form_desc">Fill in your details and we'll get back to you shortly.</p>
+      <div>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="form_name">Full Name</label>
+            <input type="text" placeholder="Your name" data-i18n-placeholder="form_name_ph">
+          </div>
+          <div class="form-group">
+            <label data-i18n="form_phone">Phone Number</label>
+            <input type="tel" placeholder="+91 XXXXX XXXXX" data-i18n-placeholder="form_phone_ph">
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form_service">Select Service</label>
+          <select>
+            <option value="" data-i18n="form_service_ph">Choose a puja...</option>
+            <option value="griha" data-i18n="svc1_title">Griha Pravesh</option>
+            <option value="satya" data-i18n="svc2_title">Satyanarayan Puja</option>
+            <option value="wedding" data-i18n="svc3_title">Wedding Rituals</option>
+            <option value="naming" data-i18n="svc4_title">Naming Ceremony</option>
+            <option value="shraddha" data-i18n="svc5_title">Shraddha / Pitru Puja</option>
+            <option value="vastu" data-i18n="svc6_title">Vastu Puja</option>
+            <option value="homa" data-i18n="svc7_title">Homa / Havan</option>
+            <option value="navagraha" data-i18n="svc8_title">Navagraha Puja</option>
+            <option value="savitri" data-i18n="svc9_title">Savitri Puja</option>
+            <option value="other" data-i18n="form_other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form_date">Preferred Date</label>
+          <input type="date">
+        </div>
+        <div class="form-group">
+          <label data-i18n="form_message">Additional Details</label>
+          <textarea placeholder="Any specific requirements or questions..." data-i18n-placeholder="form_msg_ph"></textarea>
+        </div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:0.5rem" onclick="handleFormSubmit()" data-i18n="form_submit">🙏 Send Booking Request</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">Satyabrata<span>Nana</span></div>
+      <p data-i18n="footer_desc">Bringing authentic Odia Hindu rituals to families across Bengaluru with devotion, knowledge, and heart.</p>
+    </div>
+    <div>
+      <h4 data-i18n="footer_links_title">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+        <li><a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer_services_title">Top Services</h4>
+      <ul class="footer-links">
+        <li><a href="#services" data-i18n="svc1_title">Griha Pravesh</a></li>
+        <li><a href="#services" data-i18n="svc3_title">Wedding Rituals</a></li>
+        <li><a href="#services" data-i18n="svc2_title">Satyanarayan Puja</a></li>
+        <li><a href="#services" data-i18n="svc6_title">Vastu Puja</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer_copy">© 2026 Satyabrata Nana. All rights reserved. Made with devotion.</span>
+    <span>🙏 <em data-i18n="footer_mantra">ॐ सर्वे भवन्तु सुखिनः</em></span>
+  </div>
+</footer>
+
+<!-- ═══ FLOATING WHATSAPP ═══ -->
+<a href="https://wa.me/919513808267?text=Namaste%20Satyabrata%20Nana,%20I%20would%20like%20to%20book%20a%20puja." class="floating-wa" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<!-- ═══ SCROLL TO TOP ═══ -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
