@@ -459,9 +459,11 @@ section{padding:clamp(4rem,8vw,7rem) clamp(1rem,5vw,4rem)}
   position:relative;
 }
 .services-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  display:flex;flex-wrap:wrap;justify-content:center;
   gap:1.5rem;max-width:1100px;margin:0 auto;
+}
+.services-grid .service-card{
+  flex:0 1 calc(33.333% - 1rem);min-width:280px;
 }
 .service-card{
   background:var(--white);
@@ -877,7 +879,8 @@ section{padding:clamp(4rem,8vw,7rem) clamp(1rem,5vw,4rem)}
   .section-title{font-size:clamp(1.5rem,5vw,2rem)}
   .section-desc{font-size:0.9rem}
 
-  .services-grid{grid-template-columns:1fr;gap:1rem}
+  .services-grid{justify-content:center;gap:1rem}
+  .services-grid .service-card{flex:0 1 100%;min-width:0}
   .service-card{padding:1.5rem}
   .testimonials-grid{grid-template-columns:1fr 1fr;gap:1rem}
   .testimonial-card{padding:1.5rem}
