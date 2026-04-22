@@ -367,17 +367,17 @@
       <div>
         <div class="form-row">
           <div class="form-group">
-            <label data-i18n="form_name">Full Name</label>
-            <input type="text" placeholder="Your name" data-i18n-placeholder="form_name_ph">
+            <label for="formName" data-i18n="form_name">Full Name</label>
+            <input id="formName" type="text" placeholder="Your name" data-i18n-placeholder="form_name_ph">
           </div>
           <div class="form-group">
-            <label data-i18n="form_phone">Phone Number</label>
-            <input type="tel" placeholder="+91 XXXXX XXXXX" data-i18n-placeholder="form_phone_ph">
+            <label for="formPhone" data-i18n="form_phone">Phone Number</label>
+            <input id="formPhone" type="tel" placeholder="+91 XXXXX XXXXX" data-i18n-placeholder="form_phone_ph">
           </div>
         </div>
         <div class="form-group">
-          <label data-i18n="form_service">Select Service</label>
-          <select>
+          <label for="formService" data-i18n="form_service">Select Service</label>
+          <select id="formService">
             <option value="" data-i18n="form_service_ph">Choose a puja...</option>
             <option value="griha" data-i18n="svc1_title">Griha Pravesh</option>
             <option value="satya" data-i18n="svc2_title">Satyanarayan Puja</option>
@@ -393,12 +393,12 @@
           </select>
         </div>
         <div class="form-group">
-          <label data-i18n="form_date">Preferred Date</label>
-          <input type="date">
+          <label for="formDate" data-i18n="form_date">Preferred Date</label>
+          <input id="formDate" type="date">
         </div>
         <div class="form-group">
-          <label data-i18n="form_message">Additional Details</label>
-          <textarea placeholder="Any specific requirements or questions..." data-i18n-placeholder="form_msg_ph"></textarea>
+          <label for="formMessage" data-i18n="form_message">Additional Details</label>
+          <textarea id="formMessage" placeholder="Any specific requirements or questions..." data-i18n-placeholder="form_msg_ph"></textarea>
         </div>
         <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:0.5rem" onclick="handleFormSubmit()" data-i18n="form_submit">🙏 Send Booking Request</button>
       </div>

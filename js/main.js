@@ -377,14 +377,47 @@ const secObs=new IntersectionObserver(entries=>{
 sections.forEach(s=>secObs.observe(s));
 
 // ═══════════════════════════════════════
-// FORM SUCCESS TOAST
+// FORM → WHATSAPP REDIRECT
 // ═══════════════════════════════════════
 function handleFormSubmit(){
-  const msg=T[currentLang]?.form_success||T.en.form_success;
-  const ov=document.createElement('div');
-  ov.style.cssText='position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;background:rgba(44,24,16,0.2);backdrop-filter:blur(4px);animation:fadeIn 0.3s ease';
-  ov.innerHTML='<div style="background:white;padding:2.5rem;border-radius:24px;box-shadow:0 20px 60px rgba(44,24,16,0.25);text-align:center;max-width:380px;animation:fadeInUp 0.5s cubic-bezier(0.34,1.56,0.64,1)"><div style="font-size:3rem;margin-bottom:1rem">🙏</div><p style="font-size:1.05rem;color:#2C1810;line-height:1.6;font-family:var(--font-body)">'+msg+'</p></div>';
-  document.body.appendChild(ov);
-  ov.addEventListener('click',()=>{ov.style.opacity='0';ov.style.transition='0.3s';setTimeout(()=>ov.remove(),300)});
-  setTimeout(()=>{ov.style.opacity='0';ov.style.transition='0.3s';setTimeout(()=>ov.remove(),300)},3500);
+  const nameEl=document.getElementById('formName');
+  const phoneEl=document.getElementById('formPhone');
+  const serviceEl=document.getElementById('formService');
+  const dateEl=document.getElementById('formDate');
+  const msgEl=document.getElementById('formMessage');
+
+  const name=nameEl.value.trim();
+  const phone=phoneEl.value.trim();
+  const service=serviceEl.selectedIndex>0?serviceEl.options[serviceEl.selectedIndex].text:'';
+  const date=dateEl.value;
+  const details=msgEl.value.trim();
+
+  // Highlight empty required fields
+  [nameEl,phoneEl].forEach(el=>{
+    el.style.borderColor=el.value.trim()?'':'#B83230';
+  });
+  if(!name||!phone){
+    (name?phoneEl:nameEl).focus();
+    return;
+  }
+
+  const lines=[
+    'Namaste Satyabrata Nana,',
+    'I would like to book a puja.',
+    '',
+    'Name: '+name,
+    'Phone: '+phone
+  ];
+  if(service) lines.push('Service: '+service);
+  if(date) lines.push('Preferred Date: '+date);
+  if(details) lines.push('Details: '+details);
+
+  const url='https://wa.me/919513808267?text='+encodeURIComponent(lines.join('\n'));
+  window.open(url,'_blank','noopener');
 }
+
+// Clear red border as user types
+['formName','formPhone'].forEach(id=>{
+  const el=document.getElementById(id);
+  el&&el.addEventListener('input',()=>{el.style.borderColor=''});
+});
